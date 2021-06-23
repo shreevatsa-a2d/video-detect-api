@@ -2,8 +2,3 @@ Flask==2.0.1
 opencv_python==4.5.1.48
 pafy==0.5.5
 gunicorn
-itsdangerous==1.1.0
-Jinja2==2.10.1
-MarkupSafe==1.1.1
-Werkzeug==0.15.6
-Click==7.0
