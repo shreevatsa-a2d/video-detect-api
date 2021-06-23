@@ -24,4 +24,5 @@ def name():
 
 if __name__ == '__main__':
     #username = request.args.get('username')
-    app.run(debug=True,host="192.168.29.63")
+    #app.run(debug=True,host="192.168.29.63")
+    app.run(debug=True)
