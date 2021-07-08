@@ -55,7 +55,7 @@ def video_detect(ip):
 
 #api.add_resource(Quotes, '/')
 @app.route('/video', methods=['GET'])
-def name():
+def video():
 #def catch_all(path):
     ip = request.args.get('ip')
     #print("here"+ip)
