@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app
+web: gunicorn video-detect-api:app
