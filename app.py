@@ -54,7 +54,7 @@ def video_detect(ip):
 
 
 #api.add_resource(Quotes, '/')
-@app.route('/', methods=['GET'])
+@app.route('/video', methods=['GET'])
 def name():
 #def catch_all(path):
     ip = request.args.get('ip')
@@ -65,7 +65,11 @@ def name():
     return Response(response=js,status=200, mimetype='application/json',headers={'Access-Control-Allow-Origin':'*'})
 
 
+@app.route('/', methods=['GET'])
+def name():
+    return Response("<h1>Flask</h1><p>You visited: to my website</p>", mimetype="text/html")
+   
 if __name__ == '__main__':
     #username = request.args.get('username')
     #app.run(debug=True,host="192.168.29.63")
-    app.run(debug=True)
+    app.run()
